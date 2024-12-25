@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <script src="https://kit.fontawesome.com/ee9c8e24a1.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./logo-image.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="./logo-image.png" alt="logo">
+            <h1>Expense Tracker</h1>
+        </div>
+        <h2 style="text-align: center;">"Know where your money goes!"</h2>
+        <div id="nav">
+            <b><p id="para">Why Expense Tracker ?</p></b>
+            <p>Take charge of your finances with ease! An expense tracker helps you log spending, visualize trends, and stay
+            on top of your budget. Whether saving for goals or curbing extra costs, it’s your go-to tool for smarter
+            money management. Simplify your life and make every penny count!</p>
+        </div>
+    </header>
+    <div id="main">
+        <p>Enter Your Expenses</p>
+        <form>
+            <label for="amount">Amount<span style="margin-left: 38px;">:</span></label>
+            <input type="text" id="amount" required><br>
+            <label for="date">Enter date<span style="margin-left: 15px;">:</span></label>
+            <input type="date" id="date" required><br>
+            <label for="category">Category<span style="margin-left: 28px;">:</span></label>
+            <select id="category">
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Movie">Movie</option>
+            </select><br>
+            <label for="typeofitem">Type<span style="margin-left: 66px;">:</span></label>
+            <input type="text" id="typeofitem" required><br>
+            <button type="reset" onclick="addExpenses()" id="btn1">Add Expenses</button>
+        </form>
+        <button onclick="displayTable()" id="btn2" type="submit">Show Expenses</button>
+        <h4>Total : <span id="total">0</span></h4>
+    </div>
+
+
+    <div id="table-container">
+        <table id="table">
+            <tr>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Type</th>
+            </tr>
+        </table>
+        <h4>Total : <span id="table-total">0</span></h4>
+        <button onclick="backToPage()">Back</button>
+    </div>
+
+    <div id="black"></div>
+    <footer>
+        <div id="one">
+            <img src="./logo-image.png" alt="logo">
+            <p>Copyright &copy; 2024</p>
+            <p>Powered By Expenser Tracker</p>
+            </p>
+        </div>
+        <div id="two">
+            <p>Features</p>
+            <li>Career</li>
+            <li>Blog</li>
+            <li>Status</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+        </div>
+        <div id="icon">
+            <p>Stay Connected</p>
+            <i id="twitter" class="fa-brands fa-twitter" style="font-size: 20px;"></i>
+            <i id="facebook" class="fa-brands fa-facebook" style="margin-left: 15px;font-size: 20px;"></i>
+            <i id="instagram" class="fa-brands fa-instagram" style="margin-left: 15px;font-size: 20px;"></i>
+            <i id="linkedin" class="fa-brands fa-linkedin" style="margin-left: 15px;font-size: 20px;"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
