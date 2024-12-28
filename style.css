@@ -15,11 +15,16 @@ header img{
 }
 #logo{
     display: flex;
+    flex-direction: row;
 }
 #logo h1{
     margin-left: 15px;
     margin-top: 25px;
     color: greenyellow;
+}
+#navbar{
+    display: flex;
+    flex-direction: column;
 }
 header{
     margin: 10px;
@@ -68,8 +73,8 @@ header h2{
     border: white;
 }
 #btn1{
-    border: 1px solid blue;
-    color: blue;
+    border: 1px solid peachpuff;
+    color: peachpuff;
     margin-top: 20px;
     margin-left: 70px;
     padding:7px 10px;
@@ -87,8 +92,8 @@ header h2{
     background-color: black;
 }
 #btn1:hover{
-    background-color: blue;
-    color: white;
+    background-color: peachpuff;
+    color: black;
 }
 #btn2:hover{
     background-color: green;
@@ -98,7 +103,7 @@ header h2{
     margin-left: 200px;
 }
 #main{
-    border: 2px solid rgb(247, 178, 118);
+    border: 2px solid purple;
     margin-left: 430px;
     margin-right: 430px;
     border-radius: 25px;
@@ -144,7 +149,9 @@ footer img{
     left:30%;
     display: none;
     z-index: 3;
-    background-color: peachpuff;
+    background-color:peachpuff;
+    box-shadow:0px 0px 5px 5px rgb(172, 172, 172);
+    border-radius: 20px;
     padding: 50px;
 }
 #black{
